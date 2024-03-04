@@ -1,0 +1,16 @@
+#footer {
+  margin: 0;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(164, 164, 164);
+}
+p {
+  font-size: 1.2rem;
+}
+a {
+  color: black;
+  margin-left: 0.5rem;
+}
