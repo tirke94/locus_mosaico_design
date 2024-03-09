@@ -1,0 +1,117 @@
+.section_komadni_namestaj {
+  width: 100%;
+  height: fit-content;
+  padding: 3rem;
+  position: relative;
+  margin-top: 5rem;
+}
+.section_komadni_namestaj h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+.divFlex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 2rem;
+}
+.filters {
+  width: 20%;
+  min-width: 250px;
+}
+.filters h2 {
+  font-size: 2rem;
+}
+.filters div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(217, 217, 217);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+}
+.filters div:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+.content {
+  width: 75%;
+}
+.card_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 20%;
+  height: 450px;
+}
+.div_img {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item_img {
+  width: 100%;
+  height: 250px;
+}
+.div_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+.item_name {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.item_price {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.add_to_cart {
+  width: 90%;
+  background-color: rgb(34, 32, 32);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.cena_filter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1rem;
+}
+fieldset {
+  position: relative;
+  width: 120px;
+}
+legend {
+  margin-left: 20px;
+  padding: 0 5px;
+  font-size: 1rem;
+}
+.cena_filter input {
+  width: 100%;
+  padding: 0.8rem 0;
+  border: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.cena_filter input:focus,
+.cena_filter input:active,
+.cena_filter input:hover {
+  border: none;
+  outline: none;
+}

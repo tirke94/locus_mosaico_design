@@ -23,7 +23,6 @@ function App() {
       uniqueType.push(type[i])
     }
   }
-  console.log(uniqueType);
 
 
   const typeName = (item) => {

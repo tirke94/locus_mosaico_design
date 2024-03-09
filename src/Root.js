@@ -3,11 +3,14 @@ import { Outlet } from 'react-router-dom'
 import Nav from './Components/Nav'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+import './index.css'
 
 const Root = () => {
     return (
         <>
-            <Nav />
+            <div className='nav'>
+                <Nav />
+            </div>
             <Outlet />
             <Contact />
             <Footer />

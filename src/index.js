@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Root from './Root';
-import { KomadniNamestaj, NamestajPoMeri, ProjektovanjeEnterijera, ONama } from './Screens'
+import { KomadniNamestaj, NamestajPoMeri, ProjektovanjeEnterijera, ONama, Item } from './Screens'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 
@@ -18,7 +18,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/komadniNamestaj',
-        element: <KomadniNamestaj />
+        element: <KomadniNamestaj />,
+        children: [
+          // {
+          //   index: true,
+          //   element: <KomadniNamestaj />
+          // },
+          {
+            path: '/komadniNamestaj/:id',
+            element: <Item />
+          }
+        ]
       },
       {
         path: '/namestajPoMeri',
