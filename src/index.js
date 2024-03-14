@@ -19,16 +19,12 @@ const router = createBrowserRouter([
       {
         path: '/komadniNamestaj',
         element: <KomadniNamestaj />,
-        children: [
-          // {
-          //   index: true,
-          //   element: <KomadniNamestaj />
-          // },
-          {
-            path: '/komadniNamestaj/:id',
-            element: <Item />
-          }
-        ]
+        // children: [
+        //   {
+        //     path: '/komadniNamestaj/:id',
+        //     element: <Item />
+        //   }
+        // ]
       },
       {
         path: '/namestajPoMeri',
@@ -42,6 +38,10 @@ const router = createBrowserRouter([
         path: '/oNama',
         element: <ONama />
       },
+      {
+        path: '/komadniNamestaj/:id',
+        element: <Item />
+      }
     ]
   }
 ])

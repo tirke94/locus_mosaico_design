@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './styleScreen/komadniNamestaj.css'
 import { data } from '../Utilis/Utilis.js'
 import { Link } from 'react-router-dom'
@@ -130,7 +130,6 @@ const KomadniNamestaj = () => {
         }
     }
 
-
     return (
         <div className='section_komadni_namestaj'>
             <h1>KomadniNamestaj</h1>
@@ -199,8 +198,6 @@ const KomadniNamestaj = () => {
                                 <div className='card_item' key={item.id}>
                                     <div className='div_img'>
                                         <Link to={`/komadniNamestaj/${item.id}`}>
-
-
                                             <img className='item_img'
                                                 src={item.images[0]}
                                                 alt="slka namestaja"

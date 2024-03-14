@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 import './index.css'
 
 const Root = () => {
+
     return (
         <>
             <div className='nav'>
