@@ -225,14 +225,15 @@ const Item = () => {
             </div>
 
             <div>
-                <button onClick={(product) => {
+                <button onClick={() => {
 
                     setArr((prevState) => {
                         return [...prevState, { product }]
                     })
-                    arrFromLocalStorage.push(product)
-                    console.log(arrFromLocalStorage);
-                    localStorage.setItem('favorite', JSON.stringify(arrFromLocalStorage))
+                    // arrFromLocalStorage.push(product)
+                    console.log(product);
+                    localStorage.setItem('favorite', JSON.stringify(arr))
+                    console.log(arr);
 
                 }}>Add to ls</button>
             </div>

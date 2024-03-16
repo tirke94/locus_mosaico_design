@@ -115,7 +115,7 @@ const KomadniNamestaj = () => {
             }
             if (+cenaDo >= +cenaOd) {
                 setNizZaIspis(komadniNamestaj.filter(el => el.price >= cenaOd && el.price <= cenaDo))
-                console.log(komadniNamestaj.filter(el => el.price >= cenaOd && el.price <= cenaDo));
+                // console.log(komadniNamestaj.filter(el => el.price >= cenaOd && el.price <= cenaDo));
                 setAllFurnitures(false)
                 return
             }
@@ -125,10 +125,11 @@ const KomadniNamestaj = () => {
         }
         if (+cenaOd === 0 && +cenaDo > 0) {
             setNizZaIspis(komadniNamestaj.filter(el => el.price <= cenaDo))
-            console.log(komadniNamestaj.filter(el => el.price <= cenaDo));
+            // console.log(komadniNamestaj.filter(el => el.price <= cenaDo));
             setAllFurnitures(false)
         }
     }
+
 
     return (
         <div className='section_komadni_namestaj'>

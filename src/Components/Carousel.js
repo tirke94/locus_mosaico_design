@@ -40,7 +40,7 @@ const Carousel = () => {
                 </NavLink>
 
             </div>
-            <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabing" }}>
+            <motion.div ref={carousel} className='carousel-track' whileTap={{ cursor: "grabing" }}>
                 <motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
                     {images.map(image => {
                         return (

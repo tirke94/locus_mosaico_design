@@ -31,7 +31,8 @@
 .activeLink {
   color: orange !important;
 }
-.cart {
+.cart,
+#cart {
   position: relative;
 }
 .cart_icon {

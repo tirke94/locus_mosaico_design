@@ -1,0 +1,22 @@
+.cart {
+  width: 100%;
+  margin-top: 7rem;
+  text-align: center;
+}
+.cartEmptyContent {
+  padding: 3rem 0;
+}
+.cartEmptyContent h2 {
+  font-size: 3rem;
+  color: #26343f;
+  margin-bottom: 2rem;
+}
+.btnBack {
+  background-color: #10161b;
+  color: white;
+  text-align: center;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
