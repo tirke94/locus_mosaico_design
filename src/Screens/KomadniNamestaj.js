@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './styleScreen/komadniNamestaj.css'
 import { data } from '../Utilis/Utilis.js'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+
 
 const KomadniNamestaj = () => {
+    const { location } = useLocation()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [location])
 
     const [allFurnitures, setAllFurnitures] = useState(true)
     const [komadniNamestaj, setKomadniNamestaj] = useState(data)
@@ -21,6 +27,7 @@ const KomadniNamestaj = () => {
     const radniSto = []
     const komode = []
     const cipelarnici = []
+
 
     const addToCart = () => {
         console.log('Added to cart');
@@ -129,7 +136,6 @@ const KomadniNamestaj = () => {
             setAllFurnitures(false)
         }
     }
-
 
     return (
         <div className='section_komadni_namestaj'>

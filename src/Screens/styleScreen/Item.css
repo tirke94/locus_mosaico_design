@@ -8,18 +8,16 @@
   margin-top: 7rem;
   width: 70%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /* carouesel*/
 .carousel {
   overflow: hidden;
   width: 50%;
-  height: 700px;
-  padding: 1.5rem 0;
+  padding: 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
   margin-bottom: 0;
 }
@@ -32,14 +30,11 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 490px; */
   background-color: transparent;
   cursor: default;
 }
 .carousel-img {
-  /* width: 430px; */
   width: 75%;
-  max-width: 440px;
   aspect-ratio: 1;
   padding: 0 20px;
   pointer-events: none;
@@ -70,11 +65,13 @@
 }
 .leftArr {
   position: absolute;
-  left: 40px;
+  left: 0;
+  top: 40%;
 }
 .rightArr {
   position: absolute;
-  right: 40px;
+  right: 0;
+  top: 40%;
 }
 .indicator-images {
   width: 90px;
@@ -84,7 +81,7 @@
 .inactiveImg {
   border: none;
 }
-.star {
+.iconStar {
   width: 30px;
   height: 30px;
   margin-left: 20px;
@@ -95,7 +92,6 @@
 
 .detailsSection {
   width: 50%;
-  height: 700px;
   padding: 1rem 3rem;
   display: flex;
   flex-direction: column;
@@ -142,7 +138,6 @@
   align-items: center;
   column-gap: 0.6rem;
 }
-/* additional info*/
 .additional-information {
   width: 70%;
   padding-bottom: 3rem;
@@ -161,11 +156,27 @@
   flex-direction: column;
   row-gap: 1rem;
 }
+.aditional-pMain {
+  padding: 5px 0;
+  padding-left: 2rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.additionalHeader {
+  display: inline-block;
+  width: 140px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+.aditionalText {
+  margin: 5px;
+  font-size: 1.3rem;
+}
 .additional-buttons {
   padding: 0.5rem 0.7rem;
   background-color: rgb(226, 227, 229);
   border: 1px solid #26343f;
-  /* border-bottom: none; */
   z-index: 100;
   margin-left: 20px;
 }
@@ -207,19 +218,145 @@ hr {
   row-gap: 1rem;
   margin: 2rem 0;
 }
+.sugestionItems-card button {
+  border: none;
+}
+.l {
+  margin: 0;
+  background-color: white;
+}
 .sugestionItems-card img {
   width: 100%;
   aspect-ratio: 1;
-  /* transition: all 0.5s ease-in 0.5s; */
 }
-.add_to_cart {
-  width: 100%;
-  background-color: rgb(34, 32, 32);
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
+
+@media screen and (max-width: 1250px) {
+  .itemDetails {
+    /* margin-top: 7rem; */
+    width: 90%;
+    /* display: flex; */
+  }
+  .detailsSection h2 {
+    font-size: 2.5rem;
+  }
+  .additional-information {
+    width: 90%;
+    padding-bottom: 3rem;
+  }
+  .sugestionSection {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .itemDetails {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .carousel {
+    width: 80%;
+  }
+  .detailsSection {
+    width: 80%;
+    padding: 1rem;
+    row-gap: 1rem;
+  }
+  .detailsSection h2 {
+    font-size: 2.5rem;
+  }
+  .additional-information {
+    width: 90%;
+    padding-bottom: 3rem;
+  }
+  .sugestionSection {
+    width: 90%;
+  }
+  .sugestionItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 1rem;
+    column-gap: 5%;
+  }
+  .sugestionSection h2 {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .sugestionItems-card {
+    width: 30%;
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .itemDetails {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .carousel {
+    width: 100%;
+  }
+  .button-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .leftArr {
+    position: absolute;
+    left: 0;
+    top: 30%;
+  }
+  .rightArr {
+    position: absolute;
+    right: 0;
+    top: 30%;
+  }
+  .detailsSection {
+    width: 80%;
+    padding: 1rem;
+    row-gap: 1rem;
+  }
+  .detailsSection h2 {
+    font-size: 2.5rem;
+  }
+  .additional-information {
+    width: 90%;
+    padding-bottom: 3rem;
+  }
+  .additional-div-opis p {
+    font-size: 1rem;
+  }
+  .aditional-pMain {
+    padding-left: 0;
+  }
+  .additionalHeader {
+    width: 100px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    display: block;
+  }
+  .aditionalText {
+    font-size: 1rem;
+  }
+  .sugestionSection {
+    width: 90%;
+  }
+  .sugestionItems {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 1rem;
+    column-gap: 8%;
+  }
+  .sugestionSection h2 {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .sugestionItems-card {
+    width: 45%;
+    margin: 1rem 0;
+  }
 }

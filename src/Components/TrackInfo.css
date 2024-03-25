@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   row-gap: 2rem;
+  text-align: center;
 }
 .track_svg {
   width: 50px;
@@ -22,4 +23,43 @@
 .track_item h3 {
   color: #335670;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 900px) {
+  .track {
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+    padding: 2.7rem 1.8rem;
+  }
+  .track_item {
+    width: 23%;
+    row-gap: 1.9rem;
+  }
+  .track_svg {
+    width: 45px;
+    height: 45px;
+  }
+  .track_item h3 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .track {
+    padding: 2.7rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  .track_item {
+    width: 70%;
+  }
+  .track_svg {
+    width: 50px;
+    height: 50px;
+  }
+  .track_item h3 {
+    color: #335670;
+    font-size: 1.5rem;
+  }
 }

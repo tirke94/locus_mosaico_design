@@ -14,3 +14,16 @@ a {
   color: black;
   margin-left: 0.5rem;
 }
+@media screen and (max-width: 800px) {
+  #footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}

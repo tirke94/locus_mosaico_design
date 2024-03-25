@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import { data } from './Utilis/Utilis'
+import { dataPoMeri } from './Utilis/DataPoMeri'
+import { dataEnterijer } from './Utilis/DataEnterijer'
 import HomeCategories from './Components/HomeCategories';
 import CardHomeCategories from './Components/CardHomeCategories';
 import Carousel from './Components/Carousel';
@@ -11,10 +13,12 @@ console.log(data);
 
 function App() {
   const [komadniNamestaj, setKomadniNamestaj] = useState(data)
+  const [namestajPoMeri, setNamestajPoMeri] = useState(dataPoMeri)
+  const [enterijer, setEnterijer] = useState(dataEnterijer)
 
+  //komadniNamestaj
   const type = []
   const uniqueType = []
-
   komadniNamestaj.forEach(obj => {
     type.push(obj.type)
   })
@@ -23,7 +27,17 @@ function App() {
       uniqueType.push(type[i])
     }
   }
-
+  // //namestajPoMeri
+  // const typePoMeri = []
+  // const uniqueType = []
+  // komadniNamestaj.forEach(obj => {
+  //   typePoMeri.push(obj.type)
+  // })
+  // for (let i = 0; i <= type.length; i++) {
+  //   if (type[i] !== type[i + 1]) {
+  //     uniqueType.push(type[i])
+  //   }
+  // }
 
   const typeName = (item) => {
 

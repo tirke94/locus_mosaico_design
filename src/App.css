@@ -13,11 +13,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 .headerSection h1 {
   color: white;
   font-size: 4.5rem;
   font-family: monospace;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .headerSection h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .headerSection {
+    height: 50vh;
+  }
+  .headerSection h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerSection {
+    height: 50vh;
+  }
+  .headerSection h1 {
+    font-size: 2.5rem;
+  }
 }

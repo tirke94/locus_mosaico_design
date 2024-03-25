@@ -1,0 +1,119 @@
+.favorite {
+  margin-top: 7rem;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+a {
+  text-decoration: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 1rem;
+  margin-bottom: 1rem;
+}
+.div_img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div_img img {
+  width: 100%;
+  height: 250px;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 0 2rem;
+}
+.card p {
+  font-size: 1.5rem;
+}
+.trash {
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+.trash svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .favorite {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .card {
+    width: 45%;
+  }
+  .div_img {
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .div_img img {
+    width: 100%;
+    height: 230px;
+  }
+  .cardContent {
+    row-gap: 0.9rem;
+    padding: 0 1.8rem;
+  }
+  .card p {
+    font-size: 1.3rem;
+  }
+  .trash svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .favorite {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .card {
+    row-gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .div_img {
+    width: 250px;
+    height: 250px;
+  }
+  .div_img img {
+    width: 100%;
+    height: 225px;
+  }
+  .cardContent {
+    row-gap: 0.8rem;
+    padding: 0 1.7rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  .trash svg {
+    width: 20px;
+    height: 20px;
+  }
+}

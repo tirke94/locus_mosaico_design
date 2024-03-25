@@ -6,17 +6,17 @@ import { NavLink } from 'react-router-dom'
 const Carousel = () => {
 
     const images = [
-        'https://images.pexels.com/photos/339567/pexels-photo-339567.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        'https://cdn.fstoppers.com/media/2020/12/21/nando-vertical-horizontal-04.jpg',
-        'https://images.unsplash.com/photo-1695848548758-3ee40e6cd9ed?w=420&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NzI0MDk2ODl8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1661041521544-48c4140b8af6?w=420&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODYzOTg4OHx8ZW58MHx8fHx8',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYjBqltNGYEAoNuAqITHFgFLFigzfvNuQ9EVOV-7t0UWqSzJ_Whb_EACkgLFXLQ1WfHjE&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRss1hT4MBc6eY8hoK-pc_M9d5hCD5CkAlWju60nrF94xxII8aPKXzc9RvCknazo9UwxmA&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_qQACGM-ZVHbcPxi9ay5Oy6JyT9HEyBKO9fLUJ-arR0Y7Hx1Ssz_qujRI-VFF-aVrMA0&usqp=CAU',
-        'https://wallpaperaccess.com/full/1212006.jpg',
-        'https://st2.depositphotos.com/1002489/5568/i/450/depositphotos_55681849-stock-photo-new-york-city-amazing-sunset.jpg',
-        'https://i.pinimg.com/564x/7e/12/ea/7e12ead71623c63286ffb2fe26f99156.jpg',
-        'https://media.istockphoto.com/id/1071576354/photo/aerial-view-of-george-washington-bridge.jpg?s=612x612&w=0&k=20&c=PtrzCMTcZwV7pzLT-0CHjjs5aiXC8-mLR5jisUsd6JI='
+        'https://mermeta.rs/wp-content/uploads/2019/12/mermeta-uredjenje-enterijera-beograd14.jpg',
+        'https://mermeta.rs/wp-content/uploads/2019/12/mermeta-uredjenje-enterijera-beograd6.jpg',
+        'https://bekostyle.com/wp-content/uploads/2021/10/5-1024x725.jpg',
+        'https://www.enterijer.com/wp-content/uploads/2019/10/moderna-dnevna-soba.jpg',
+        'https://www.dizajnenterijera.rs/wp-content/uploads/2019/03/beograd-na-vodi-enterijer-sonja-brstina-25.jpg',
+        'https://moja4zida.rs/wp-content/uploads/2023/03/dnevna-novo1.png',
+        'https://www.enterijer.com/wp-content/uploads/2019/10/enterijer-stana-dedinje.jpg',
+        'https://www.lineamilanovic.com/wp-content/uploads/2021/12/beograd-na-vodi-stan-apartman-opremanje-izdavanje-lineamilanovic-900x600.jpg',
+        'https://www.lineamilanovic.com/wp-content/uploads/2020/07/Dizajn-enterijera-vile-Beograd-900x600.jpg',
+        'https://dizajn-enterijera.rs/wp-content/uploads/2021/02/Familily-home-living-room-design-2-750x499.jpg',
+        'https://studioarhic.rs/images/projects/01_enterijer_butik_obuce_trznicentar_usce/projekat_enterijera_u_stilu_neoklasicizma_00.jpg'
     ]
 
     const [width, setWidth] = useState(0)
@@ -28,7 +28,6 @@ const Carousel = () => {
     }, [])
 
     return (
-        // <section>
         <>
             <div className='carousel_ambijent'>
                 <h2 className='carousel_h2'>Locus Mosaico ambijenti</h2>
@@ -52,7 +51,6 @@ const Carousel = () => {
                 </motion.div>
             </motion.div>
         </>
-        // </section>
     )
 }
 

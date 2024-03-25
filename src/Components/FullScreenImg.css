@@ -1,0 +1,78 @@
+.mainFullScreeContainer {
+  z-index: 80;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 100px 250px;
+}
+.mainFullScreeContainer button {
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  right: 250px;
+  background-color: white;
+}
+.darkBackground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.8;
+}
+.fullScreenImg {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .mainFullScreeContainer {
+    padding: 80px 140px;
+  }
+  .mainFullScreeContainer button {
+    width: 50px;
+    height: 50px;
+    top: 80px;
+    right: 140px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .mainFullScreeContainer {
+    padding: 60px 80px;
+  }
+  .mainFullScreeContainer button {
+    width: 40px;
+    height: 40px;
+    top: 60px;
+    right: 80px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mainFullScreeContainer {
+    padding: 140px 50px;
+  }
+  .mainFullScreeContainer button {
+    width: 40px;
+    height: 40px;
+    top: 140px;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mainFullScreeContainer {
+    padding: 200px 0px;
+  }
+  .mainFullScreeContainer button {
+    width: 30px;
+    height: 30px;
+    top: 200px;
+    right: 0px;
+  }
+}
