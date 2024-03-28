@@ -41,7 +41,7 @@
 .content {
   width: 75%;
 }
-.card_item {
+.cardItem {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,14 +49,14 @@
   width: 20%;
   height: 450px;
 }
-.div_img {
+.divImg {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.item_img {
+.itemImg {
   width: 100%;
   height: 250px;
 }
@@ -95,7 +95,7 @@
 }
 fieldset {
   position: relative;
-  width: 120px;
+  width: 100px;
 }
 legend {
   margin-left: 20px;
@@ -104,14 +104,161 @@ legend {
 }
 .cena_filter input {
   width: 100%;
-  padding: 0.8rem 0;
+  padding: 0.5rem 0;
   border: none;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .cena_filter input:focus,
 .cena_filter input:active,
 .cena_filter input:hover {
   border: none;
   outline: none;
+}
+.filterBrn {
+  padding: 0.7rem 1rem;
+  background-color: transparent;
+  color: black;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .section_komadni_namestaj {
+    padding: 2rem;
+  }
+  .content {
+    width: 75%;
+  }
+  .show_items {
+    column-gap: 5%;
+    row-gap: 2rem;
+  }
+  .cardItem {
+    width: 30%;
+    height: 450px;
+  }
+  .divImg {
+    width: 100%;
+    height: 300px;
+  }
+  .itemImg {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section_komadni_namestaj {
+    width: 100%;
+    padding: 1rem;
+  }
+  .section_komadni_namestaj h1 {
+    font-size: 3rem;
+  }
+  .divFlex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 2rem;
+  }
+  .filters {
+    width: 400px;
+  }
+  .content {
+    width: 100%;
+  }
+  .show_items {
+    column-gap: 5%;
+    row-gap: 2rem;
+  }
+  .cardItem {
+    width: 40%;
+    height: 450px;
+  }
+  .item_price {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 810px) {
+  .section_komadni_namestaj h1 {
+    font-size: 2.5rem;
+  }
+  .filters {
+    width: 400px;
+  }
+  .show_items {
+    column-gap: 5%;
+    row-gap: 1rem;
+  }
+  .cardItem {
+    width: 28%;
+    height: 450px;
+  }
+  .itemImg {
+    width: 100%;
+    height: 290px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section_komadni_namestaj {
+    padding: 1rem;
+  }
+  .section_komadni_namestaj h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .filters {
+    width: 300px;
+  }
+  .filters h2 {
+    font-size: 1.6rem;
+  }
+  .filters div {
+    width: 90%;
+  }
+  .cena_filter input {
+    font-size: 1rem;
+  }
+  .filterBrn {
+    padding: 0.7rem 0.9rem;
+    font-size: 1rem;
+  }
+  .content {
+    width: 100%;
+  }
+  .show_items {
+    column-gap: 0;
+    row-gap: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .cardItem {
+    width: 90%;
+    height: 420px;
+  }
+  .divImg {
+    width: 100%;
+    height: 300px;
+  }
+  .itemImg {
+    width: 100%;
+    height: 280px;
+  }
+  .div_content {
+    align-items: center;
+  }
+  .item_name {
+    font-size: 1rem;
+  }
+  .item_price {
+    font-size: 1rem;
+  }
+  .add_to_cart {
+    width: 150px;
+    padding: 0.8rem 0;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
 }

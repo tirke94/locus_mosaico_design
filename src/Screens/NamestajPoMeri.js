@@ -1,12 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { dataPoMeri } from '../Utilis/DataPoMeri'
+import { useLocation } from 'react-router-dom'
 import './styleScreen/NamestajPoMeri.css'
 import './styleScreen/Item.css'
 import FullScreenImg from '../Components/FullScreenImg'
 
-console.log(dataPoMeri);
 
 const NamestajPoMeri = () => {
+
+    const { location } = useLocation()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [location])
     const [namestajPoMeri, setNametsajPoMeri] = useState(dataPoMeri)
     const [currentImg, setCurrentImg] = useState(null)
 

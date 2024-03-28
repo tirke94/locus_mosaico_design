@@ -29,10 +29,6 @@ const KomadniNamestaj = () => {
     const cipelarnici = []
 
 
-    const addToCart = () => {
-        console.log('Added to cart');
-    }
-
     data.forEach(el => {
         if (el.species === 'stolica') {
             stolice.push(el)
@@ -122,7 +118,6 @@ const KomadniNamestaj = () => {
             }
             if (+cenaDo >= +cenaOd) {
                 setNizZaIspis(komadniNamestaj.filter(el => el.price >= cenaOd && el.price <= cenaDo))
-                // console.log(komadniNamestaj.filter(el => el.price >= cenaOd && el.price <= cenaDo));
                 setAllFurnitures(false)
                 return
             }
@@ -132,7 +127,6 @@ const KomadniNamestaj = () => {
         }
         if (+cenaOd === 0 && +cenaDo > 0) {
             setNizZaIspis(komadniNamestaj.filter(el => el.price <= cenaDo))
-            // console.log(komadniNamestaj.filter(el => el.price <= cenaDo));
             setAllFurnitures(false)
         }
     }
@@ -193,7 +187,7 @@ const KomadniNamestaj = () => {
                             <legend>Do (RSD)</legend>
                             <input type="number" className='inputPrice' value={cenaDo} onChange={onCenaDo} />
                         </fieldset>
-                        <button onClick={filterPrice}>Filter</button>
+                        <button className='filterBrn' onClick={filterPrice}>Filter</button>
                     </section>
                 </div>
                 <div className='content'>
@@ -202,10 +196,10 @@ const KomadniNamestaj = () => {
 
                             return (
 
-                                <div className='card_item' key={item.id}>
-                                    <div className='div_img'>
+                                <div className='cardItem' key={item.id}>
+                                    <div className='divImg'>
                                         <Link to={`/komadniNamestaj/${item.id}`}>
-                                            <img className='item_img'
+                                            <img className='itemImg'
                                                 src={item.images[0]}
                                                 alt="slka namestaja"
                                                 onMouseOver={e => e.currentTarget.src = `${item.images[1]}`}
@@ -215,7 +209,11 @@ const KomadniNamestaj = () => {
                                     <div className='div_content'>
                                         <p className='item_name'>{item.name}</p>
                                         <p className='item_price'>{item.price} din</p>
-                                        <button onClick={addToCart} className='add_to_cart'>Dodaj u korpu</button>
+                                        <button className='add_to_cart'>
+                                            <Link to={`/komadniNamestaj/${item.id}`}>
+                                                Vise
+                                            </Link>
+                                        </button>
 
                                     </div>
                                 </div>
@@ -223,18 +221,24 @@ const KomadniNamestaj = () => {
                         })
                             : nizZaIspis.map(item => {
                                 return (
-                                    <div className='card_item' key={item.id}>
-                                        <div className='div_img'>
-                                            <img className='item_img'
-                                                src={item.images[0]}
-                                                alt="slika namestaja"
-                                                onMouseOver={e => e.currentTarget.src = `${item.images[1]}`}
-                                                onMouseOut={e => e.currentTarget.src = `${item.images[0]}`} />
+                                    <div className='cardItem' key={item.id}>
+                                        <div className='divImg '>
+                                            <Link to={`/komadniNamestaj/${item.id}`}>
+                                                <img className='itemImg'
+                                                    src={item.images[0]}
+                                                    alt="slika namestaja"
+                                                    onMouseOver={e => e.currentTarget.src = `${item.images[1]}`}
+                                                    onMouseOut={e => e.currentTarget.src = `${item.images[0]}`} />
+                                            </Link>
                                         </div>
                                         <div className='div_content'>
                                             <p className='item_name'>{item.name}</p>
                                             <p className='item_price'>{item.price} din</p>
-                                            <button onClick={addToCart} className='add_to_cart'>Dodaj u korpu</button>
+                                            <button className='add_to_cart'>
+                                                <Link to={`/komadniNamestaj/${item.id}`}>
+                                                    Vise
+                                                </Link>
+                                            </button>
 
                                         </div>
                                     </div>

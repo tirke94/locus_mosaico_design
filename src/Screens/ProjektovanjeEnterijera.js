@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { dataEnterijer } from '../Utilis/DataEnterijer'
+import { useLocation } from 'react-router-dom'
 import './styleScreen/NamestajPoMeri.css'
 import './styleScreen/Item.css'
 import FullScreenImg from '../Components/FullScreenImg'
 
 
 const ProjektovanjeEnterijera = () => {
+
+    const { location } = useLocation()
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [location])
     const [projektovanjeEnterijera, setProjektovanjeEnterijera] = useState(dataEnterijer)
     const [currentImg, setCurrentImg] = useState(null)
 

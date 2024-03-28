@@ -42,7 +42,11 @@ const RandomItem = ({ data }) => {
                             <div className='div_content'>
                                 <p className='item_name'>{item.name}</p>
                                 <p className='item_price'>{item.price} din</p>
-                                <button onClick={addToCart} className='add_to_cart'>Dodaj u korpu</button>
+                                <button onClick={addToCart} className='add_to_cart'>
+                                    <Link to={`/komadniNamestaj/${item.id}`}>
+                                        Vise
+                                    </Link>
+                                </button>
 
                             </div>
                         </div>

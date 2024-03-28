@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import toast from "react-hot-toast"
 import './styleScreen/Favorite.css'
 
 const Favorite = () => {
+    const { location } = useLocation()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [location])
 
     const [favoriteItems, setFavoriteItems] = useState()
 
@@ -30,8 +36,11 @@ const Favorite = () => {
         localStorage.setItem('favorite', JSON.stringify(removedArr))
 
         setFavoriteItems(tmp)
+        toast.error(
+            `Successfully removed product!`,
+        )
     }
-    console.log(favoriteItems);
+    // console.log(favoriteItems);
 
     return (
         <div className='favorite'>
