@@ -1,7 +1,12 @@
 .cart {
   width: 100%;
-  margin-top: 7rem;
+  margin-top: 9rem;
+  margin-bottom: 5rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 2rem;
 }
 .cartEmptyContent {
   padding: 3rem 0;
@@ -19,4 +24,235 @@
   text-decoration: none;
   border-radius: 5px;
   border: none;
+}
+
+.divCartItems {
+  width: 530px;
+  padding: 1.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.divCartItems h2 {
+  font-size: 2rem;
+}
+.divCartCardItem {
+  width: 100%;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #26343f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* column-gap: 20px; */
+}
+.divCartCardItem:last-child {
+  border: none;
+}
+.divCartCardItem_img {
+  width: 50px;
+  height: 60px;
+  margin-right: 1rem;
+}
+.divCartCardItem_name {
+  width: 150px;
+  text-align: left;
+}
+.divCartCardItem_price {
+  width: 80px;
+  text-align: left;
+}
+.divCartTotal {
+  position: relative;
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.divCartTotal h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.divCartTotal p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.adress,
+.napomena,
+.townInput,
+.township,
+.phoneNumberInput {
+  width: 250px;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.adressNumber {
+  width: 80px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.adressNumber::-webkit-outer-spin-button,
+.adressNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.nacinPlacanja {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1rem;
+}
+.nacinPlacanjaLabel {
+  font-size: 1.5rem;
+}
+.divInputsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 0.5rem;
+}
+.radioBtn {
+  accent-color: "orange";
+}
+.cartBtn {
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+.submit {
+  background-color: green;
+  margin-left: 1rem;
+}
+.bought {
+  text-align: left;
+  color: green;
+  font-size: 1rem !important;
+  margin-top: 1rem;
+}
+.btnremoveFromCart {
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.divModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart {
+    padding: 0 1rem;
+  }
+  .divCartItems {
+    width: 55%;
+  }
+  .divCartTotal {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 2rem;
+  }
+  .divCartItems,
+  .divCartTotal {
+    width: fit-content;
+  }
+  .divCartTotal h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .divCartTotal p {
+    font-size: 1.2rem;
+  }
+  .adress,
+  .napomena,
+  .townInput,
+  .township,
+  .phoneNumberInput {
+    width: 230px;
+    padding: 0.4rem 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  .adressNumber {
+    width: 70px;
+    padding: 0.4rem 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  .nacinPlacanjaLabel {
+    font-size: 1.2rem;
+  }
+  .divModal {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cartEmptyContent h2 {
+    font-size: 2rem;
+  }
+  .divCartItems {
+    width: 100%;
+    padding: 1rem;
+  }
+  .divCartCardItem {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .divCartCardItem_name {
+    width: 130px;
+  }
+  .divCartCardItem_price {
+    width: 70px;
+  }
+  .adress,
+  .napomena,
+  .townInput,
+  .township,
+  .phoneNumberInput {
+    width: 220px;
+  }
+  .adress {
+    margin-right: 1rem;
+  }
+  .adressNumber {
+    width: 70px;
+    padding: 0.4rem 0.5rem;
+    margin-left: 0;
+  }
 }

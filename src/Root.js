@@ -36,11 +36,6 @@ const Root = () => {
                     },
                 }}
             />
-            {/* toast.success(`Successfully added product!`)
-            toast.error(
-                `Already added this product!\n Add product amount in the cart!`,
-            )
-            import toast, { Toaster } from "react-hot-toast" */}
         </>
     )
 }

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Root from './Root';
-import { KomadniNamestaj, NamestajPoMeri, ProjektovanjeEnterijera, ONama, Item, Cart, Favorite } from './Screens'
+import { KomadniNamestaj, NamestajPoMeri, ProjektovanjeEnterijera, Item, Cart, Favorite } from './Screens'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 
@@ -31,10 +31,6 @@ const router = createBrowserRouter([
       {
         path: '/favorite',
         element: <Favorite />
-      },
-      {
-        path: '/oNama',
-        element: <ONama />
       },
       {
         path: '/komadniNamestaj/:id',
